@@ -122,8 +122,8 @@ const styles = StyleSheet.create({
 
   lemb:{
     fontSize: 16,
-    marginLeft: '13%',
-    bottom: 23
+    marginLeft: '11%',
+    bottom: 21
   },
 
   imagem:{

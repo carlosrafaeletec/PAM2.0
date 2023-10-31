@@ -18,25 +18,22 @@ const SecondScreen = ({ navigation }) => {
       </View>
 
       <View>
-      <Image style={styles.exorcista}
-            source={require('../../assets/exorcista.png')}
-           
+        <Image style={styles.freira}
+              source={require('../../assets/freiraCart.png')}
         /> 
-        <Text style={styles.texto}>O Exorcista - O Devoto</Text>
-        <Text style={styles.divisao}>-----------------------------------------------------------------------</Text>
-      </View>
-
-      <View>
         <Text style={styles.texto}>A Freira 2</Text>
         <Text style={styles.divisao}>-----------------------------------------------------------------------</Text>
       </View>
 
       <View>
+        <Image style={styles.fale}
+            source={require("../../assets/faleCart.png")}
+        />
         <Text style={styles.texto}>Fale Comigo</Text>
-        <Text style={styles.divisao}>-----------------------------------------------------------------------</Text>
       </View>
-    </ScrollView>
       <Button title="Home" onPress={() => navigation.navigate('Home')} />
+    </ScrollView>
+      
   </View>
   );
 };
@@ -44,7 +41,6 @@ export default SecondScreen;
 
 const styles = StyleSheet.create({
   tela:{
-    flex: 1,
     backgroundColor: '#666666'
   },
 
@@ -52,36 +48,38 @@ const styles = StyleSheet.create({
       fontSize: 30,
       color: '#FFF',
       textAlign: 'center',
-      marginTop: '5%'
+      marginTop: '3%',
+      marginRight: '1%',
   },
 
   divisao:{
     color: '#248eff',
     textAlign: 'center',
-    marginTop: '5%'
+    marginTop: '3%'
 },
 
   mortais:{
       height: 405,
       marginLeft: '17%',
-      marginTop: '8%',
-      alignItems: 'center',
-  },
-  
-  exorcista:{
-    height: '55%',
-    width: '65%',
-    marginLeft: '17%',
-    marginTop: '8%',
-    alignItems: 'center'
+      marginTop: '7%',
+      borderColor: '#248eff',
+      borderWidth: 3,
   },
 
   freira:{
-    
+    marginTop: '3%',
+    marginLeft: '13%',
+    width: 290,
+    borderColor: '#248eff',
+    borderWidth: 3,
   },
 
   fale:{
-    
+    marginTop: '3%',
+    width: 285,
+    marginLeft: '13%',
+    borderColor: '#248eff',
+    borderWidth: 3,
   }
 
 });
